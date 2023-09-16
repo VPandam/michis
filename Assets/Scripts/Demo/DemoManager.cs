@@ -1,9 +1,8 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using TMPro;
 
-public class DemoManager : MonoBehaviour
-{
+public class DemoManager : MonoBehaviour {
     private Camera _cam;
     private PlayerMovement _player;
     [SerializeField] private PlayerData[] playerTypes;
@@ -18,38 +17,33 @@ public class DemoManager : MonoBehaviour
 
     public SceneData SceneData;
 
-    private void Awake()
-    {
+    private void Awake() {
         _cam = FindObjectOfType<Camera>();
         _player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
-    private void Start()
-    {
+    private void Start() {
         SetSceneData(SceneData);
         SwitchLevel(0);
         SwitchPlayerType(0);
     }
 
-    public void SetSceneData(SceneData data)
-    {
+    public void SetSceneData(SceneData data) {
         SceneData = data;
 
         //Update the camera and tilemap color according to the new data.
-        _cam.orthographicSize = data.camSize;
+        //_cam.orthographicSize = data.camSize;
         _cam.backgroundColor = data.backgroundColor;
         levels[_currentTilemapIndex].color = data.foregroundColor;
 
         _currentForegroundColor = data.foregroundColor;
     }
 
-    public void SwitchPlayerType(int index)
-    {
+    public void SwitchPlayerType(int index) {
         _player.Data = playerTypes[index];
         _currentPlayerTypeIndex = index;
 
-        switch(index)
-        {
+        switch (index) {
             case 0:
                 nameText.text = "Celeste";
                 break;
@@ -62,8 +56,7 @@ public class DemoManager : MonoBehaviour
         }
     }
 
-    public void SwitchLevel(int index)
-    {
+    public void SwitchLevel(int index) {
         //Switch tilemap active and apply color.
         levels[_currentTilemapIndex].gameObject.SetActive(false);
         levels[index].gameObject.SetActive(true);
@@ -74,19 +67,16 @@ public class DemoManager : MonoBehaviour
 
         _currentTilemapIndex = index;
     }
-    
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
             //Switch to next level. Uses "?" to indicate that if the expression in the brackets before is true
             //then 0 will be passed throuh else it will increse by 1.
             SwitchLevel((_currentTilemapIndex == levels.Length - 1) ? 0 : _currentTilemapIndex + 1);
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2))
-        {
+        if (Input.GetKeyDown(KeyCode.Alpha2)) {
             //Switch to next level. Uses "?" to indicate that if the expression in the brackets before is true
             //then 0 will be passed throuh else it will increse by 1.
             SwitchPlayerType((_currentPlayerTypeIndex == playerTypes.Length - 1) ? 0 : _currentPlayerTypeIndex + 1);
