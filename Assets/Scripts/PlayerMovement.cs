@@ -7,6 +7,7 @@
  */
 
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour {
     public bool IsSliding { get; private set; }
 
     //Timers (also all fields, could be private and a method returning a bool could be used)
+   
     public float LastOnGroundTime { get; private set; }
     public float LastOnWallTime { get; private set; }
     public float LastOnWallRightTime { get; private set; }
@@ -53,7 +55,7 @@ public class PlayerMovement : MonoBehaviour {
     #endregion
 
     #region INPUT PARAMETERS
-    private Vector2 _moveInput;
+    public Vector2 _moveInput;
 
     public float LastPressedJumpTime { get; private set; }
     public float LastPressedDashTime { get; private set; }
@@ -96,6 +98,7 @@ public class PlayerMovement : MonoBehaviour {
         LastPressedJumpTime -= Time.deltaTime;
         LastPressedDashTime -= Time.deltaTime;
         #endregion
+     
 
         #region INPUT HANDLER
         _moveInput.x = Input.GetAxisRaw("Horizontal");
@@ -116,7 +119,6 @@ public class PlayerMovement : MonoBehaviour {
             OnDashInput();
         }
         #endregion
-
         #region COLLISION CHECKS
         if (!IsDashing && !IsJumping) {
             //Ground Check
@@ -156,8 +158,8 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (LastOnGroundTime > 0 && !IsJumping && !IsWallJumping) {
+            Debug.Log("LastOnGround > 0" + LastOnGroundTime);
             _isJumpCut = false;
-
             _isJumpFalling = false;
         }
 
@@ -168,9 +170,9 @@ public class PlayerMovement : MonoBehaviour {
                 IsWallJumping = false;
                 _isJumpCut = false;
                 _isJumpFalling = false;
+                AnimHandler.startedJumping = true;
                 Jump();
 
-                AnimHandler.startedJumping = true;
             }
             //WALL JUMP
             else if (CanWallJump() && LastPressedJumpTime > 0) {

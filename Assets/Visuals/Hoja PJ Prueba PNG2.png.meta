@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7d2bdcdb2fc8a8409b6d2b91f2cad08
+guid: 096e081378118c4459eb0bf225ca3f3a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,54 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -135,13 +90,40 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_0
+      name: Hoja PJ Prueba PNG2_0
       rect:
         serializedVersion: 2
         x: 377
@@ -155,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19c2049d80d997245aaedc06379aa122
-      internalID: -1669055977
+      spriteID: e76201d02f851ff41bfab87c1d09b34b
+      internalID: 1948906464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_1
+      name: Hoja PJ Prueba PNG2_1
       rect:
         serializedVersion: 2
         x: 438
@@ -176,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e386ae54185a21a4b91fc1e88d183fb8
-      internalID: 966469432
+      spriteID: 0cc458d4d5823d445a1b42b09ba2b724
+      internalID: -636922731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_2
+      name: Hoja PJ Prueba PNG2_2
       rect:
         serializedVersion: 2
         x: 382
@@ -197,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e89b93c80d64e6a4585c74db7f6aed4c
-      internalID: -2075471272
+      spriteID: 138fc570347b51943a8d1f6af301e9f4
+      internalID: 71762430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_3
+      name: Hoja PJ Prueba PNG2_3
       rect:
         serializedVersion: 2
         x: 444
@@ -218,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb808f72d01446141aea7a34bbdc5411
-      internalID: -86338809
+      spriteID: 522520c63bd572547bd91c34cf923fc6
+      internalID: -1434942715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_4
+      name: Hoja PJ Prueba PNG2_4
       rect:
         serializedVersion: 2
         x: 51
@@ -239,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3112b52fee89243949cb1d53e025c4
-      internalID: -825695413
+      spriteID: fd54d61fedadf86458d1266a5a1597c7
+      internalID: -1084346855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_5
+      name: Hoja PJ Prueba PNG2_5
       rect:
         serializedVersion: 2
         x: 504
@@ -260,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb7689335b4ff7741861fb42d4acf7dd
-      internalID: 1412437977
+      spriteID: 6511d142ab695d447a1b154fe5cd56d2
+      internalID: -1904119991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_6
+      name: Hoja PJ Prueba PNG2_6
       rect:
         serializedVersion: 2
         x: 1034
@@ -281,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b334731f05d8bf4a9b7c685ef6bb757
-      internalID: -976899736
+      spriteID: 4fbe4246c4447334aacc427fe6eb8137
+      internalID: -2886572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_7
+      name: Hoja PJ Prueba PNG2_7
       rect:
         serializedVersion: 2
         x: 1555
@@ -302,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd905e8fe3c69649b0a0d71434dde76
-      internalID: 757839456
+      spriteID: 2263e5d6c8df717439c57a4ec9b23ef0
+      internalID: -1988580267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_8
+      name: Hoja PJ Prueba PNG2_8
       rect:
         serializedVersion: 2
         x: 2274
@@ -323,35 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21da603df82e444d96282de5f9e9a21
-      internalID: -102460673
+      spriteID: 5ed36fa6eb193b7469d8f41971b2a97c
+      internalID: 1073412822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_9
-      rect:
-        serializedVersion: 2
-        x: 2438
-        y: 1580
-        width: 536
-        height: 503
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aae80f490b2b7346af4165e982f00ba
-      internalID: -754903906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_10
+      name: Hoja PJ Prueba PNG2_9
       rect:
         serializedVersion: 2
         x: 53
@@ -365,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de36201b8957c504cbbd5379f5c43aeb
-      internalID: -1946328398
+      spriteID: af627f00c3fb8ad4cb77e65ae9ed8321
+      internalID: 1088154012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_11
+      name: Hoja PJ Prueba PNG2_10
       rect:
         serializedVersion: 2
         x: 736
@@ -386,14 +347,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c95df382f5363547b760f89ff717666
-      internalID: 432878878
+      spriteID: f29112c2c9fb2b344931970f2d1d8854
+      internalID: -2049013399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_12
+      name: Hoja PJ Prueba PNG2_11
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1402
+        width: 537
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7482d45741bf4894cb8b32b512ddd948
+      internalID: -1303871918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja PJ Prueba PNG2_12
       rect:
         serializedVersion: 2
         x: 1561
@@ -407,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04aa11b77d60e9a409c04f6fc5d949e0
-      internalID: 1450182563
+      spriteID: 60ce86433c1126c4284fcb3240de6078
+      internalID: 1871874475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_13
+      name: Hoja PJ Prueba PNG2_13
       rect:
         serializedVersion: 2
         x: 2094
@@ -428,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39ecaf7aad3c9f242a617271e8493ad2
-      internalID: 1143252577
+      spriteID: 6382a7519f2fa0340bf3c9f13fca8a19
+      internalID: 114309596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_14
+      name: Hoja PJ Prueba PNG2_14
       rect:
         serializedVersion: 2
         x: 2120
@@ -449,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09e1bb557e6bbd409867f10361ac712
-      internalID: -470069534
+      spriteID: 326960ff74eea824a8e24aef9ce0a343
+      internalID: 1511591115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_15
+      name: Hoja PJ Prueba PNG2_15
       rect:
         serializedVersion: 2
         x: 599
@@ -470,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7662c3a78469ec41a45422da9ae3a7b
-      internalID: -112060404
+      spriteID: 79bd64180bd676046b43a2e4e83894a8
+      internalID: 315546331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja PJ Prueba PNG_16
+      name: Hoja PJ Prueba PNG2_16
       rect:
         serializedVersion: 2
         x: 1812
@@ -491,8 +473,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c6a2b5416a1204a81ac7555fe49781
-      internalID: 1961894999
+      spriteID: 3e154462c19d5904484fd47bffd013dd
+      internalID: 1550880736
       vertices: []
       indices: 
       edges: []
@@ -508,26 +490,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hoja PJ Prueba PNG_0: -1669055977
-      Hoja PJ Prueba PNG_1: 966469432
-      Hoja PJ Prueba PNG_10: -1946328398
-      Hoja PJ Prueba PNG_11: 432878878
-      Hoja PJ Prueba PNG_12: 1450182563
-      Hoja PJ Prueba PNG_13: 1143252577
-      Hoja PJ Prueba PNG_14: -470069534
-      Hoja PJ Prueba PNG_15: -112060404
-      Hoja PJ Prueba PNG_16: 1961894999
-      Hoja PJ Prueba PNG_2: -2075471272
-      Hoja PJ Prueba PNG_3: -86338809
-      Hoja PJ Prueba PNG_4: -825695413
-      Hoja PJ Prueba PNG_5: 1412437977
-      Hoja PJ Prueba PNG_6: -976899736
-      Hoja PJ Prueba PNG_7: 757839456
-      Hoja PJ Prueba PNG_8: -102460673
-      Hoja PJ Prueba PNG_9: -754903906
-  spritePackingTag: 
+      Hoja PJ Prueba PNG2_0: 1948906464
+      Hoja PJ Prueba PNG2_1: -636922731
+      Hoja PJ Prueba PNG2_10: -2049013399
+      Hoja PJ Prueba PNG2_11: -1303871918
+      Hoja PJ Prueba PNG2_12: 1871874475
+      Hoja PJ Prueba PNG2_13: 114309596
+      Hoja PJ Prueba PNG2_14: 1511591115
+      Hoja PJ Prueba PNG2_15: 315546331
+      Hoja PJ Prueba PNG2_16: 1550880736
+      Hoja PJ Prueba PNG2_2: 71762430
+      Hoja PJ Prueba PNG2_3: -1434942715
+      Hoja PJ Prueba PNG2_4: -1084346855
+      Hoja PJ Prueba PNG2_5: -1904119991
+      Hoja PJ Prueba PNG2_6: -2886572
+      Hoja PJ Prueba PNG2_7: -1988580267
+      Hoja PJ Prueba PNG2_8: 1073412822
+      Hoja PJ Prueba PNG2_9: 1088154012
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

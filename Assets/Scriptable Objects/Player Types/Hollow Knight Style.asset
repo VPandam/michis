@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Hollow Knight Style
   m_EditorClassIdentifier: 
   gravityStrength: -52
-  gravityScale: 1.7333333
+  gravityScale: 5.3007135
   fallGravityMult: 2
   maxFallSpeed: 18
   fastFallGravityMult: 1
   maxFastFallSpeed: 20
-  runMaxSpeed: 9.5
-  runAcceleration: 9.5
+  runMaxSpeed: 7.5
+  runAcceleration: 7.5
   runAccelAmount: 50
-  runDecceleration: 9.5
+  runDecceleration: 7.5
   runDeccelAmount: 50
   accelInAir: 1
   deccelInAir: 1

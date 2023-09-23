@@ -1,9 +1,10 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour {
     private PlayerMovement mov;
     private Animator anim;
-    private SpriteRenderer spriteRend;
+    public SpriteRenderer spriteRend;
 
     private DemoManager demoManager;
 
@@ -17,8 +18,8 @@ public class PlayerAnimator : MonoBehaviour {
     private ParticleSystem _jumpParticle;
     private ParticleSystem _landParticle;
 
-    public bool startedJumping { private get; set; }
-    public bool justLanded { private get; set; }
+    public bool startedJumping;
+    public bool justLanded;
 
     public float currentVelY;
 
@@ -28,10 +29,11 @@ public class PlayerAnimator : MonoBehaviour {
         anim = spriteRend.GetComponent<Animator>();
 
         demoManager = FindObjectOfType<DemoManager>();
-
+            
         _jumpParticle = jumpFX.GetComponent<ParticleSystem>();
         _landParticle = landFX.GetComponent<ParticleSystem>();
     }
+
 
     private void LateUpdate() {
         #region Tilt
@@ -48,8 +50,12 @@ public class PlayerAnimator : MonoBehaviour {
 
         float newRot = ((tiltProgress * maxTilt * 2) - maxTilt);
         float rot = Mathf.LerpAngle(spriteRend.transform.localRotation.eulerAngles.z * mult, newRot, tiltSpeed);
+
         //spriteRend.transform.localRotation = Quaternion.Euler(0, 0, rot * mult);
+
         #endregion
+
+        
 
         CheckAnimationState();
 
@@ -57,11 +63,14 @@ public class PlayerAnimator : MonoBehaviour {
         jumpPSettings.startColor = new ParticleSystem.MinMaxGradient(demoManager.SceneData.jumpFxColor);
         ParticleSystem.MainModule landPSettings = _landParticle.main;
         landPSettings.startColor = new ParticleSystem.MinMaxGradient(demoManager.SceneData.landFxColor);
-        Debug.Log(demoManager.SceneData.landFxColor);
     }
 
     private void CheckAnimationState() {
+
+        anim.SetBool("IsGrounded", mov.LastOnGroundTime > 0);
+
         if (startedJumping) {
+            Debug.Log("Start jumping");
             anim.SetTrigger("Jump");
             GameObject obj = Instantiate(jumpFX, transform.position - (Vector3.up * transform.localScale.y / 1.2f), Quaternion.Euler(-90, 0, 0));
             Destroy(obj, 1);
@@ -70,13 +79,17 @@ public class PlayerAnimator : MonoBehaviour {
         }
 
         if (justLanded) {
+            Debug.Log("Just landed");
             anim.SetTrigger("Land");
-            GameObject obj = Instantiate(landFX, transform.position - (Vector3.up * transform.localScale.y / 1.2f), Quaternion.Euler(-90, 0, 0));
+            GameObject obj = Instantiate(landFX, transform.position - (Vector3.up * transform.localScale.y / .7f), Quaternion.Euler(-90, 0, 0));
             Destroy(obj, 1);
             justLanded = false;
             return;
         }
 
         anim.SetFloat("Vel Y", mov.RB.velocity.y);
+        
+        anim.SetFloat("Vel X", mov.RB.velocity.x);
+        
     }
 }
